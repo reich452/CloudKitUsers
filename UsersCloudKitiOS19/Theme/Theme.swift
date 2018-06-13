@@ -32,20 +32,21 @@ extension UIView {
 
 extension UIColor {
     
+    // computed property
+    
     static var primaryColor: UIColor {
         return UIColor(red: 210/255, green: 109/255, blue: 180/255, alpha: 1)
-        
     }
     
-    static var secondaryColor: UIColor {
-        return UIColor(red: 52/255, green: 148/255, blue: 230/255, alpha: 1)
-    }
-    
+    // static constant - does the exact same thing ^
+    static let secondaryColor = UIColor(red: 52/255, green: 148/255, blue: 230/255, alpha: 1)
 }
 
-
+// This makes it so we can acutally see it in the storyboard 
+@IBDesignable
 class CustomUserTextField: UITextField {
     
+    // IB stands for interface buider - this makes it so we can add or change things in the story boards
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
