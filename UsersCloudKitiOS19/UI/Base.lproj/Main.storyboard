@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XDA-OI-Lri">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="KGq-J1-myK">
+            <objects>
+                <viewController id="XDA-OI-Lri" customClass="SignUpViewController" customModule="UsersCloudKitiOS19" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xcf-hN-VCj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gtl-V8-amB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wxJ-MT-s4Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7mE-qf-BE8">
+                                <rect key="frame" x="177" y="123" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="NxQ-UC-96J">
+                                <rect key="frame" x="37.5" y="233.5" width="300" height="220.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="w8o-NS-mpQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="81.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="     Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="shl-Ow-yZB" customClass="CustomUserTextField" customModule="UsersNotes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="34.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="    Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8uL-vy-tdz" customClass="CustomUserTextField" customModule="UsersNotes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="46.5" width="300" height="35"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="boarderColor">
+                                                        <color key="value" red="0.99595564603805542" green="0.99619156122207642" blue="0.99164885282516479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dVE-sZ-iRZ">
+                                        <rect key="frame" x="0.0" y="121.5" width="300" height="99"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lr-k7-5oF" customClass="CustomUserButton" customModule="UsersNotes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Sign Up">
+                                                    <color key="titleColor" red="0.99684995412826538" green="0.99203747510910034" blue="0.99196380376815796" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="boarderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="signUpButtonTapped:" destination="XDA-OI-Lri" eventType="touchUpInside" id="Rci-C3-3FZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qm7-0p-Mid" customClass="CustomUserButton" customModule="UsersNotes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="57" width="300" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Log In">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="boarderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="loginButtonTapped:" destination="XDA-OI-Lri" eventType="touchUpInside" id="EpC-uq-Hg8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NxQ-UC-96J" firstAttribute="centerY" secondItem="l5p-eV-aLG" secondAttribute="centerY" id="CFb-dN-Vm5"/>
+                            <constraint firstItem="NxQ-UC-96J" firstAttribute="width" secondItem="wxJ-MT-s4Z" secondAttribute="width" multiplier="0.8" id="GXm-dM-N2R"/>
+                            <constraint firstItem="NxQ-UC-96J" firstAttribute="height" secondItem="wxJ-MT-s4Z" secondAttribute="height" multiplier="0.33" id="HWf-bW-bs4"/>
+                            <constraint firstItem="NxQ-UC-96J" firstAttribute="centerX" secondItem="l5p-eV-aLG" secondAttribute="centerX" id="T10-3M-9Xp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l5p-eV-aLG"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="7mE-qf-BE8" id="bzG-Oi-xGv"/>
+                        <outlet property="emailTextField" destination="shl-Ow-yZB" id="DL4-xW-XBi"/>
+                        <outlet property="usernameTextField" destination="8uL-vy-tdz" id="9wB-7P-4lK"/>
+                        <segue destination="HsS-70-q0T" kind="show" identifier="toWelcomeVC" id="Air-Cl-sp5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vs7-i9-aMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="106"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="2TZ-vc-wQJ">
+            <objects>
+                <viewController id="HsS-70-q0T" customClass="WelcomeViewController" customModule="CloudKitUsers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cnw-Qo-nbO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ac1-04-jWR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oAJ-2c-Slw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BON-ma-D7W">
+                                <rect key="frame" x="16" y="319" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BON-ma-D7W" firstAttribute="trailing" secondItem="oAJ-2c-Slw" secondAttribute="trailingMargin" id="OX3-aM-vlb"/>
+                            <constraint firstItem="BON-ma-D7W" firstAttribute="centerY" secondItem="oAJ-2c-Slw" secondAttribute="centerY" id="Wn8-hP-lkH"/>
+                            <constraint firstItem="BON-ma-D7W" firstAttribute="leading" secondItem="oAJ-2c-Slw" secondAttribute="leadingMargin" id="yMk-cP-rKn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g8F-CA-8pZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="BON-ma-D7W" id="2Dq-EW-xCH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6d0-QY-qLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="640.79999999999995" y="105.69715142428787"/>
+        </scene>
+    </scenes>
+</document>
